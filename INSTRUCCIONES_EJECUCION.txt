@@ -1,0 +1,31 @@
+INSTRUCCIONES PARA EJECUTAR EL PROGRAMA (DESDE UN ARCHIVO ZIP)
+
+1) Descomprime el archivo ZIP en una carpeta de tu elección.
+
+2) Abre una terminal en la carpeta del proyecto descomprimido.
+
+3) Verifica que tengas Python 3.12 o superior instalado:
+   python --version
+
+4) (Recomendado) Crea y activa un entorno virtual:
+
+   Linux/macOS:
+   python -m venv .venv
+   source .venv/bin/activate
+
+   Windows (PowerShell):
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
+
+5) Instala las dependencias del proyecto:
+   pip install -r requirements.txt
+
+6) Ejecuta la aplicación:
+   python main.py
+
+7) (Opcional) Ejecuta pruebas para validar el proyecto:
+   python -m unittest discover -s tests -v
+
+Notas:
+- Si el comando "python" no funciona en tu sistema, prueba con "python3".
+- Este proyecto usa Tkinter para la interfaz gráfica.
