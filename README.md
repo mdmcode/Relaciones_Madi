@@ -1,6 +1,6 @@
 # Relaciones y Funciones en Conjuntos Finitos
 
-Aplicación de escritorio en **Python 3.12+** con **Tkinter + ttk** para una actividad de Matemática Discreta sobre relaciones y funciones en conjuntos finitos.
+Aplicación de escritorio en **Python 3.12+** con **Tkinter + ttk** que permite analizar relaciones y funciones en conjuntos finitos.
 
 ## Objetivo académico
 
