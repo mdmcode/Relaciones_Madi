@@ -11,6 +11,12 @@ Permitir ingresar conjuntos finitos y una relación binaria para:
 - Evaluar si la relación es función de A en B
 - Clasificar la función (inyectiva, sobreyectiva, biyectiva)
 
+## Documento de funcionamiento interno
+
+Se incluye un archivo descargable con explicación técnica del funcionamiento interno y su vínculo con matemática discreta:
+
+- [`FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.md`](FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.md)
+
 ## Características del sistema
 
 - Selección entre relación sobre **A × A** o relación de **A en B**
