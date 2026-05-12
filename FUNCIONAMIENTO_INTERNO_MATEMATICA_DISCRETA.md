@@ -157,6 +157,6 @@ Sea \(n=|R|\), \(m=|A|\):
 
 En GitHub:
 
-1. Abrir `FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.md`.
-2. Clic en **Raw**.
-3. Guardar el archivo desde el navegador.
+1. Abrir `FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.doc` para descargar la versión Word.
+2. Usar la descarga del navegador para guardar el archivo `.doc`.
+3. Si prefieres texto plano, también puedes abrir `FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.md` y guardarlo.
