@@ -39,7 +39,6 @@ def es_funcion(relacion: set[Pair], conjunto_a: Iterable[str], conjunto_b: Itera
 
 def analizar_inyectividad(relacion: set[Pair], conjunto_a: Iterable[str], conjunto_b: Iterable[str]) -> tuple[bool, dict[str, list[str]]]:
     """Analiza si una función es inyectiva."""
-    _ = set(conjunto_b)
     set_a = set(conjunto_a)
     imagen_a_preimagenes: dict[str, set[str]] = defaultdict(set)
 
