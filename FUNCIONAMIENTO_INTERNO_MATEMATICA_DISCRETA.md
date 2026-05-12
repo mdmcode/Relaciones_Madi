@@ -153,7 +153,7 @@ Sea \(n=|R|\), \(m=|A|\):
 - `logic/gestor_conjuntos.py` → estado matemático vigente en sesión.
 - `gui/aplicacion.py` y `gui/vistas.py` → interacción usuario ↔ formalismo.
 
-## 10) Cómo descargar este archivo
+## 10) Cómo descargar las versiones del documento
 
 En GitHub:
 
