@@ -2,7 +2,7 @@
 
 import unittest
 
-from logic.relation_properties import es_reflexiva, es_simetrica, es_transitiva
+from logic.propiedades_relacion import es_reflexiva, es_simetrica, es_transitiva
 
 
 class RelationPropertiesTests(unittest.TestCase):

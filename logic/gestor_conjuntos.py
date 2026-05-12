@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from utils.validators import validar_conjunto, validar_par
+from utils.validadores import validar_conjunto, validar_par
 
 Pair = tuple[str, str]
 

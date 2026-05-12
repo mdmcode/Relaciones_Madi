@@ -2,7 +2,7 @@
 
 import unittest
 
-from logic.closures import cerradura_reflexiva, cerradura_simetrica, cerradura_transitiva
+from logic.cerraduras import cerradura_reflexiva, cerradura_simetrica, cerradura_transitiva
 
 
 class ClosuresTests(unittest.TestCase):

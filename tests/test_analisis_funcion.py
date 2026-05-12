@@ -2,7 +2,7 @@
 
 import unittest
 
-from logic.function_analysis import (
+from logic.analisis_funcion import (
     analizar_biyectividad,
     analizar_inyectividad,
     analizar_sobreyectividad,

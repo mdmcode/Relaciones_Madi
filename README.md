@@ -32,20 +32,20 @@ Permitir ingresar conjuntos finitos y una relación binaria para:
 ```text
 main.py
 gui/
-  app.py
-  views.py
+  aplicacion.py
+  vistas.py
 logic/
-  sets_manager.py
-  relation_properties.py
-  closures.py
-  function_analysis.py
+  gestor_conjuntos.py
+  propiedades_relacion.py
+  cerraduras.py
+  analisis_funcion.py
 utils/
-  formatters.py
-  validators.py
+  formateadores.py
+  validadores.py
 tests/
-  test_relation_properties.py
-  test_closures.py
-  test_function_analysis.py
+  test_propiedades_relacion.py
+  test_cerraduras.py
+  test_analisis_funcion.py
 README.md
 requirements.txt
 ```

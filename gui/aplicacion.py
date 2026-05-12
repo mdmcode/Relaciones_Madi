@@ -5,17 +5,17 @@ from __future__ import annotations
 import tkinter as tk
 from tkinter import messagebox
 
-from gui.views import RelationView
-from logic.closures import cerradura_reflexiva, cerradura_simetrica, cerradura_transitiva
-from logic.function_analysis import (
+from gui.vistas import RelationView
+from logic.cerraduras import cerradura_reflexiva, cerradura_simetrica, cerradura_transitiva
+from logic.analisis_funcion import (
     analizar_biyectividad,
     analizar_inyectividad,
     analizar_sobreyectividad,
     es_funcion,
 )
-from logic.relation_properties import es_reflexiva, es_simetrica, es_transitiva
-from logic.sets_manager import RelationState
-from utils.formatters import formatear_conjunto, formatear_pares_faltantes, formatear_relacion
+from logic.propiedades_relacion import es_reflexiva, es_simetrica, es_transitiva
+from logic.gestor_conjuntos import RelationState
+from utils.formateadores import formatear_conjunto, formatear_pares_faltantes, formatear_relacion
 
 
 class RelationApp(tk.Tk):
