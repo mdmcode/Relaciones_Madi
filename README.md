@@ -16,7 +16,7 @@ Permitir ingresar conjuntos finitos y una relación binaria para:
 Se incluye un archivo descargable con explicación técnica del funcionamiento interno y su vínculo con matemática discreta:
 
 - [`Descargar FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.docx (Word)`](FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.docx)
-- [`Descargar FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.doc (texto plano, no Word binario)`](FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.doc)
+- [`Descargar FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.doc`](FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.doc)
 - [`FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.md`](FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.md)
 
 ## Características del sistema
