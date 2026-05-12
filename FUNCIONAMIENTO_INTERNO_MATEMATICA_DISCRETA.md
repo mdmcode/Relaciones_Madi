@@ -54,21 +54,21 @@ Esto garantiza que la relación ingresada tenga consistencia matemática.
 
 ## 5) Algoritmos implementados y significado discreto
 
-## 5.1 Reflexividad (`es_reflexiva`)
+### 5.1 Reflexividad (`es_reflexiva`)
 
 Verifica si \((a,a)\in R\) para todo \(a\in A\).
 
 - Salida: `bool` + conjunto de pares diagonales faltantes.
 - Idea discreta: inspección de la diagonal de la matriz de relación.
 
-## 5.2 Simetría (`es_simetrica`)
+### 5.2 Simetría (`es_simetrica`)
 
 Para cada \((a,b)\in R\), exige \((b,a)\in R\).
 
 - Salida: `bool` + pares inversos faltantes.
 - Idea discreta: invariancia frente al intercambio de componentes.
 
-## 5.3 Transitividad (`es_transitiva`)
+### 5.3 Transitividad (`es_transitiva`)
 
 Si \((a,b)\in R\) y \((b,c)\in R\), entonces \((a,c)\in R\).
 
@@ -76,28 +76,28 @@ Si \((a,b)\in R\) y \((b,c)\in R\), entonces \((a,c)\in R\).
 - Salida: `bool` + pares implicados que faltan.
 - Idea discreta: cierre por composición de relaciones.
 
-## 5.4 Cerradura reflexiva (`cerradura_reflexiva`)
+### 5.4 Cerradura reflexiva (`cerradura_reflexiva`)
 
 Agrega todos los \((a,a)\) faltantes de \(A\).
 
 - Devuelve: pares agregados + nueva relación.
 - Garantiza la mínima extensión reflexiva.
 
-## 5.5 Cerradura simétrica (`cerradura_simetrica`)
+### 5.5 Cerradura simétrica (`cerradura_simetrica`)
 
 Agrega inversos faltantes \((b,a)\) para cada \((a,b)\).
 
 - Devuelve: pares agregados + nueva relación.
 - Garantiza la mínima extensión simétrica.
 
-## 5.6 Cerradura transitiva (`cerradura_transitiva`)
+### 5.6 Cerradura transitiva (`cerradura_transitiva`)
 
 Itera agregando consecuencias transitivas hasta llegar a **punto fijo** (ya no aparecen pares nuevos).
 
 - Devuelve: pares agregados + relación final.
 - Idea discreta: construcción de clausura de alcance.
 
-## 5.7 Análisis de función (`es_funcion`, `analizar_*`)
+### 5.7 Análisis de función (`es_funcion`, `analizar_*`)
 
 Se evalúa si \(R\) define función \(A\to B\):
 

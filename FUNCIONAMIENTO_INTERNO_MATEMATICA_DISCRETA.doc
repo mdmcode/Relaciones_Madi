@@ -1,31 +1,31 @@
-FUNCIONAMIENTO INTERNO DEL PROGRAMA (MATEMATICA DISCRETA)
+FUNCIONAMIENTO INTERNO DEL PROGRAMA (MATEMÁTICA DISCRETA)
 
-Este documento explica, de forma tecnica y academica, como opera internamente la aplicacion Relaciones y Funciones en Conjuntos Finitos.
+Este documento explica, de forma técnica y académica, cómo opera internamente la aplicación Relaciones y Funciones en Conjuntos Finitos.
 
-1) MODELO MATEMATICO QUE IMPLEMENTA EL SISTEMA
+1) MODELO MATEMÁTICO QUE IMPLEMENTA EL SISTEMA
 
-- Conjuntos finitos: A y, segun el modo, B.
-- Relacion binaria: subconjunto R de A x A (modo AA) o R de A x B (modo AB).
-- Funcion: caso especial de relacion f: A -> B, donde cada elemento de A tiene exactamente una imagen en B.
-- Propiedades relacionales: reflexiva, simetrica y transitiva.
-- Cerraduras: reflexiva, simetrica y transitiva como extensiones minimas de R.
+- Conjuntos finitos: A y, según el modo, B.
+- Relación binaria: subconjunto R de A x A (modo AA) o R de A x B (modo AB).
+- Función: caso especial de relación f: A -> B, donde cada elemento de A tiene exactamente una imagen en B.
+- Propiedades relacionales: reflexiva, simétrica y transitiva.
+- Cerraduras: reflexiva, simétrica y transitiva como extensiones mínimas de R.
 
 2) ARQUITECTURA INTERNA DEL PROYECTO
 
 El programa separa responsabilidades en capas:
 
-- gui/   -> interfaz grafica y eventos del usuario
-- logic/ -> algoritmos de teoria de relaciones y funciones
-- utils/ -> validacion y formateo
-- tests/ -> verificacion unitaria
+- gui/   -> interfaz gráfica y eventos del usuario
+- logic/ -> algoritmos de teoría de relaciones y funciones
+- utils/ -> validación y formateo
+- tests/ -> verificación unitaria
 
 Flujo general:
 1. Usuario ingresa conjuntos en GUI.
 2. logic/gestor_conjuntos.py valida y guarda estado.
 3. Usuario agrega pares ordenados.
-4. El estado interno almacena la relacion como conjunto de tuplas.
+4. El estado interno almacena la relación como conjunto de tuplas.
 5. Al analizar, gui/aplicacion.py invoca algoritmos de logic/.
-6. Resultados se muestran en lenguaje matematico en el panel de salida.
+6. Resultados se muestran en lenguaje matemático en el panel de salida.
 
 3) ESTRUCTURAS DE DATOS CLAVE
 
@@ -38,8 +38,8 @@ Cada par (x, y) representa xRy.
 4) VALIDACIONES DE ENTRADA
 
 En utils/validadores.py:
-- Los conjuntos no pueden estar vacios.
-- Maximo 10 elementos por conjunto.
+- Los conjuntos no pueden estar vacíos.
+- Máximo 10 elementos por conjunto.
 - No se permiten duplicados.
 - Todo par debe pertenecer al producto cartesiano permitido:
   - modo AA: A x A
@@ -50,54 +50,54 @@ En utils/validadores.py:
 5.1 Reflexividad (es_reflexiva)
 - Verifica si (a,a) pertenece a R para todo a en A.
 
-5.2 Simetria (es_simetrica)
+5.2 Simetría (es_simetrica)
 - Para cada (a,b) en R, exige (b,a) en R.
 
 5.3 Transitividad (es_transitiva)
-- Si (a,b) y (b,c) estan en R, entonces (a,c) debe estar en R.
+- Si (a,b) y (b,c) están en R, entonces (a,c) debe estar en R.
 
 5.4 Cerradura reflexiva (cerradura_reflexiva)
 - Agrega todos los (a,a) faltantes.
 
-5.5 Cerradura simetrica (cerradura_simetrica)
+5.5 Cerradura simétrica (cerradura_simetrica)
 - Agrega los inversos faltantes.
 
 5.6 Cerradura transitiva (cerradura_transitiva)
 - Itera hasta punto fijo, agregando consecuencias transitivas.
 
-5.7 Analisis de funcion (es_funcion, analizar_*)
+5.7 Análisis de función (es_funcion, analizar_*)
 - Verifica existencia y unicidad de imagen para cada elemento de A.
 - Clasifica en inyectiva, sobreyectiva y biyectiva.
 
-6) ORQUESTACION DE LA GUI
+6) ORQUESTACIÓN DE LA GUI
 
 Archivo principal: gui/aplicacion.py
-- Conecta eventos de interfaz con logica.
+- Conecta eventos de interfaz con lógica.
 - Usa RelationState como modelo.
-- Presenta reporte con resumen, propiedades, equivalencia, cerraduras y analisis de funcion.
+- Presenta reporte con resumen, propiedades, equivalencia, cerraduras y análisis de función.
 
-7) RELACION DE EQUIVALENCIA
+7) RELACIÓN DE EQUIVALENCIA
 
 Solo aplica formalmente en A x A y requiere:
 - reflexiva
-- simetrica
+- simétrica
 - transitiva
 
-8) COMPLEJIDAD (VISION PRACTICA)
+8) COMPLEJIDAD (VISIÓN PRÁCTICA)
 
 Sea n = |R|, m = |A|:
 - Reflexiva: O(m)
-- Simetrica: O(n)
-- Transitiva (verificacion): O(n^2)
+- Simétrica: O(n)
+- Transitiva (verificación): O(n^2)
 
 9) TRAZABILIDAD ARCHIVO -> CONCEPTO
 
-- logic/propiedades_relacion.py -> axiomas de relacion
-- logic/cerraduras.py -> clausuras minimas
-- logic/analisis_funcion.py -> definicion formal de funcion y clasificacion
+- logic/propiedades_relacion.py -> axiomas de relación
+- logic/cerraduras.py -> clausuras mínimas
+- logic/analisis_funcion.py -> definición formal de función y clasificación
 - utils/validadores.py -> consistencia de producto cartesiano
-- logic/gestor_conjuntos.py -> estado matematico vigente
-- gui/aplicacion.py y gui/vistas.py -> interaccion usuario <-> formalismo
+- logic/gestor_conjuntos.py -> estado matemático vigente
+- gui/aplicacion.py y gui/vistas.py -> interacción usuario <-> formalismo
 
 10) DESCARGA
 
