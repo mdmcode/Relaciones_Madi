@@ -159,4 +159,4 @@ En GitHub:
 
 1. Abrir `FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.docx` para descargar la versión Word.
 2. En GitHub, abrir el archivo y usar la opción de descarga/guardado del navegador para obtener el `.docx`.
-3. Si prefieres, también está `FUNCIONAMIENTO_INTERNO_MATEMATICA_DISCRETA.doc` (texto) y este `.md`.
+3. Si prefieres texto plano, también puedes usar este `.md`.
